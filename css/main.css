@@ -1,3 +1,33 @@
 .wrapper {
 width: 100%;
 }
+/*General style*/
+
+/*Colour font*/
+h1, h2, h3, p, a, .copyright{
+    color: #203181 !important;
+}
+
+/*Footer style*/
+.spotify-song{
+    height: 100px;
+}
+
+
+
+
+/*Home page - Services style: background-color*/
+.uk-card {
+    background-color: #FFA428;
+}
+
+.ecommerce {
+    background-color: #203181;
+}
+
+
+/*About page - Meet the team: font colour*/
+
+.team-member p{
+    color: #FFA428 !important;
+}
