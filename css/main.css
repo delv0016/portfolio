@@ -48,7 +48,7 @@ h2 {
     color: #FFA428 !important;
 }
 
-/*Home page: background-color*/
+/*Home page: background-color for uk-cards*/
 .uk-card {
     background-color: #FFA428;
 }
@@ -72,7 +72,7 @@ h2 {
 } */
 
 
-/*About page: font colour*/
+/*About page: font and icon colour*/
 
 .member p{
     margin-bottom: 5;
@@ -86,7 +86,7 @@ h2 {
     color: #203181;
 }
 
-/*Contact page: background, font colour*/
+/*Contact page: background location , font and button colour*/
 .location-wrapper {
     background-color: #bcc1d9;
 }
