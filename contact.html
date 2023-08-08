@@ -16,35 +16,77 @@
 <body>
 
 
-
+    <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
     <main role="main">
-        <div class="contact-description justify-content-lg-center p-5 m-5">
-            <h1>Think Bigger</h1>
-            <h2>Get in touch and 
-                let’s get to work.</h2>
-            <p>We understand the importance of a 
-                website that not only represents your 
-                brand but also engages and converts 
-                visitors into loyal customers. 
-                 </p>
-        </div>
+        <div class="container">
+            <div class="contact-first d-flex flex-column flex-lg-row col-lg ">
+                <div class="contact-description justify-content-center p-4 mt-md-4 pb-0 mb-0">
+                    <h1>Think Bigger</h1>
+                    <h2 class="mt-4">Get in touch and
+                        let’s get to work.</h2>
+                    <p>We understand the importance of a
+                        website that not only represents your
+                        brand but also engages and converts
+                        visitors into loyal customers.
+                    </p>
+                </div>
 
-        <div class="contact-form">
-            <form action="contact.html" method="post" role="form">
-        </div>
+                <div class="contact-form p-4 pt-0 mt-0 d-flex flex-column col-lg-6 mt-lg-4">
+                    <form action="contact.html" method="post" role="form" class="d-flex flex-column">
+                        <div class="mb-2">
+                            <label for="name" class="form-label"></label>
+                            <input type="text" class="form-control" id="name" placeholder="Your name">
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="form-label"></label>
+                            <input type="email" class="form-control" id="email" placeholder="E-mail">
+                        </div>
+                        <div class="mb-2">
+                            <label for="company" class="form-label"></label>
+                            <input type="text" class="form-control" id="company" placeholder="Company name">
+                        </div>
+                        <div class="mb-2">
+                            <label for="phone" class="form-label"></label>
+                            <input type="number" class="form-control" id="phone" placeholder="Phone number">
+                        </div>
+                        <div class="mb-2">
+                            <label for="message" class="form-label"></label>
+                            <textarea type="text" class="form-control" id="message" placeholder="Your message"></textarea>
+                        </div>
 
-        <div class="location">
-            <h2>Ottawa</h2>
-            <p>1009 Beaverbrook Rd 
-                Kanata, Ontario, K2K 1R6
-                Canada</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2805.06895695149!2d-75.90671492323675!3d45.32722997107208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2000698d5a549%3A0x45ae1c5ec18bdb97!2s1009%20Beaverbrook%20Rd%2C%20Kanata%2C%20ON%20K2K%201R6!5e0!3m2!1sen!2sca!4v1691293911162!5m2!1sen!2sca" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <button type="submit" class="btn align-self-end">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="location-wrapper">
+            <div class="container mb-0">
+                <div class="location justify-content-center p-4 d-lg-flex flex-lg-row col-lg">
+                    <div class="col-lg"></div>
+                    <div class="col-lg-4 order-lg-1 ms-lg-4 align-self-lg-center">
+                        <h2>Ottawa</h2>
+                        <ul class="address list-unstyled" itemscope itemtype="https://schema.org/PostalAddress">
+                            <li itemprop="streetAddress">1009 Beaverbrook Rd, Kanata,</li>
+                            <li itemprop="addressRegion">Ontario,</li>
+                            <li itemprop="postalCode">K2K 1R6,</li>
+                            <li itemprop="addressCountry">Canada.</li>
+                        </ul>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2805.06895695149!2d-75.90671492323675!3d45.32722997107208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2000698d5a549%3A0x45ae1c5ec18bdb97!2s1009%20Beaverbrook%20Rd%2C%20Kanata%2C%20ON%20K2K%201R6!5e0!3m2!1sen!2sca!4v1691293911162!5m2!1sen!2sca"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="col-lg-4"
+                        >
+                    </iframe>
+                    <div class="col-lg order-lg-2"></div>
+                </div>
+            </div>
         </div>
     </main>
+    <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
 
-    
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit-icons.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

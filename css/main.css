@@ -1,22 +1,37 @@
 .wrapper {
-width: 100%;
+    width: 100%;
+    max-width: 100%;
 }
+
 /*General style*/
 
-/*Colour font*/
-h1, h2, h3, p, a, .copyright{
+.top-bar, footer{
+    background-color: #FCE7CB;
+}
+
+h1, h2, h3, p, a, .copyright, form{
     color: #203181 !important;
 }
 
-/*Footer style*/
 .spotify-song{
     height: 100px;
 }
 
+.nav-list{
+    align-items: center;
+}
+
+.nav-link:hover {
+    background-color: #FFA428;
+}
+.nav-link:active {
+    background-color: #FFA428;
+}
 
 
 
-/*Home page - Services style: background-color*/
+
+/*Home page: background-color*/
 .uk-card {
     background-color: #FFA428;
 }
@@ -25,9 +40,121 @@ h1, h2, h3, p, a, .copyright{
     background-color: #203181;
 }
 
+.ecommerce .uk-card-title {
+    color: #FFA428 !important;
+}
 
-/*About page - Meet the team: font colour*/
+/* .services-content .uk-card {
+    max-height: 275px;
+}
+
+.services-content .uk-card-media-bottom img{
+    width: 100%;
+    max-width: 275px;
+    height: auto;
+} */
+
+
+/*About page: font colour*/
 
 .team-member p{
     color: #FFA428 !important;
 }
+
+.fa-brands {
+    color: #203181;
+}
+
+/*Contact page: background, font colour*/
+.location-wrapper {
+    background-color: #bcc1d9;
+}
+
+.btn {
+    background-color: #FFA428;
+}
+
+.address li {
+    color: #203181;
+}
+
+.member img {
+    width: 100%;
+    max-width: 150px;
+    height: auto; 
+}
+
+@media (min-width: 768px) { 
+    .uk-card-media-bottom{
+        width: 75%;
+    }
+
+    .icon img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) { 
+    h1 {
+        line-height: 0.5!important;
+    }
+    .banner-wrapper {
+        max-width: 50%;
+    }
+
+    .services-content .uk-card-media-bottom{
+        width: 100%;
+    }
+
+    .design .uk-card-media-bottom img{
+        width: 100%;
+        max-width: 500px;
+        height: auto; 
+    }
+
+    .uk-card-media-bottom img{
+        width: 100%;
+        max-width: 250px;
+        height: auto; 
+    }
+
+    .member img {
+        width: 100%;
+        max-width: 250px;
+        height: auto; 
+    }
+
+    .icon img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+}
+
+@font-face {
+    font-family: 'wild_wanderlustpersonal';
+    src: url('/assets/fonts/wildwanderlust-personal-webfont.woff2') format('woff2'),
+         url('/assets/fonts/wildwanderlust-personal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+    font-family: 'wild_wanderlustpersonal';
+    font-weight:normal;
+    font-style:normal;
+    font-size: 7.5rem;
+    line-height: 0.7!important;
+}
+
+.banner-title h2 {
+    font-family: 'wild_wanderlustpersonal';
+    font-weight:normal;
+    font-style:normal;
+    font-size: 8.5rem;
+    line-height: 1!important;
+}
+

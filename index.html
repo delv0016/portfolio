@@ -17,29 +17,15 @@
 <body>
     <div class="wrapper">
         <!--Nav: logo, nav bar-->
-        <header role="banner">
-            <nav class="navbar navbar-expand-sm justify-content-between" role="navigation" style="background-color: #FFE5C3">
-                <div class="container-fluid justify-content-center">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/Logo_webnique.png" alt="Webnique logo" width="300" height="200">
-                    </a>
-                    <div class="nav-list">
-                        <ul class="navbar-nav m-5 ">
-                            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about_us.html">About us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
         <main role="main">
             <!--Banner: title and description-->
-            <div class="main-banner">
-                <div class="banner-wrapper d-flex flex-column justify-content-lg-center p-5 m-5">
+            <div class="main-banner d-flex justify-content-lg-center container">
+                <div class="banner-wrapper d-flex flex-column justify-content-lg-center pt-4 m-4 pb-0 mb-0">
                     <div class="banner-title">
-                        <h1>Hi, Welcome to Webnique</h1>
+                        <h1>Hi, Welcome to</h1>
+                        <h2>Webnique</h2>
                     </div>
                     <p>We are dedicated to delivering exceptional web design
                         services that go beyond aesthetics. Our team of skilled
@@ -50,64 +36,44 @@
             </div>
 
             <!--Content: services-->
-            <div class="services-content container">
-                <div class="row row-cols-1 row-cols-lg-2 gap-3">
+            <div class="services-content container" id="services"> 
+                <div class="d-flex flex-column flex-md-column flex-lg-row gap-3 m-4 col-lg-12">
                     <div class="design uk-card uk-card-default
-                        uk-card-hover uk-card-body rounded">
-                        <h2 class="uk-card-title">Design</h2>
-                        <div class="uk-card-media-bottom">
-                            <img src="images/design.png" width="1800" height="1200" alt="">
+                        uk-card-hover uk-card-body rounded
+                        d-flex flex-md-column col-lg-6">
+                        <h2 class="uk-card-title ">Design</h2>
+                        <div class="uk-card-media-bottom w-md-50 align-self-end">
+                            <picture>
+                                <source srcset="images/designX2.png" media="(min-width: 992px)"/>
+                                <img class="img-fluid" src="images/design.png" alt="logo" />
+                            </picture>
+                            <!-- <img src="images/designX2.png" width="1800" height="1200" alt="design service"> -->
                         </div>
                     </div>                
 
                     <div class="digital-product uk-card uk-card-default 
-                        uk-card-hover uk-card-body rounded">
+                        uk-card-hover uk-card-body rounded d-flex flex-md-column">
                         <h2 class="uk-card-title">Digital Product</h2>
-                        <div class="uk-card-media-bottom">
-                            <img src="images/digitalproduct.png" width="1800" height="1200" alt="">
+                        <div class="uk-card-media-bottom w-md-50 align-self-end">
+                            <img class="img-fluid" src="images/digitalproduct.png" width="1800" height="1200" alt="digital product service">
                         </div>
                     </div>
 
                     <div class="ecommerce uk-card uk-card-default uk-card-hover 
-                        uk-card-body rounded">
+                        uk-card-body rounded d-flex flex-md-column">
                         <h2 class="uk-card-title">E-commerce</h2>
-                        <div class="uk-card-media-bottom">
-                            <img src="images/ecommerce.png" width="1800" height="1200" alt="">
+                        <div class="uk-card-media-bottom ratio-1x1 w-md-50 align-self-end">
+                            <picture>
+                                <source srcset="images/ecommerceX2.png" media="(min-width: 992px)"/>
+                                <img class="img-fluid" src="images/ecommerce.png" alt="ecommerce service" />
+                            </picture>
+                            <!-- <img class="img-fluid " src="images/ecommerce.png" width="1800" height="1200" alt="ecommerce service"> -->
                         </div>
                     </div>
                 </div>
         </main>
+        <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
-        <!--Footer: Spotify, Copyright, links-->
-        <footer role="footer" style="background-color: #FFE5C3">
-            <div class="footer-wrapper d-flex flex-column align-content-center flex-wrap p-2">
-                <div class="spotify-song m-2 d-flex flex-column align-content-center flex-wrap">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4GL8hK0rhcjCrJQx0x6WEx?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-
-                <div class="footer-links d-flex flex-row justify-content-between flex-wrap">
-                    
-                    <div class="links">
-                        <h3>Let's Talk</h3>
-                        <ul class="list-unstyled">                           
-                            <li><a class="link-underline link-underline-opacity-0" href="contact.html">Contact</a></li>
-                            <li><a class="link-underline link-underline-opacity-0" href="#">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <h3>See us in</h3>
-                        <ul class="list-unstyled">
-                            <li><a class="link-underline link-underline-opacity-0" href="#">Instagram</a></li>
-                            <li><a class="link-underline link-underline-opacity-0" href="#">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="copyright">
-                    &#169; Copyright 2023 Webnique. All rights reserved. <a class="link-underline link-underline-opacity-0" href="#top">Back to Top</a>
-                </div>
-            </div>
-        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit-icons.min.js"></script>
