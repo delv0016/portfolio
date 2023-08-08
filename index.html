@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/21b880f4e1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/css/uikit.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
@@ -16,8 +20,9 @@
 
 <body>
     <div class="wrapper">
-        <!--Nav: logo, nav bar-->
-        <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+        <!--Nav: logo, nav bar flex row-->
+        <iframe src="header.html"
+            onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
         <main role="main">
             <!--Banner: title and description-->
@@ -35,45 +40,47 @@
                 </div>
             </div>
 
-            <!--Content: services-->
-            <div class="services-content container" id="services"> 
+            <!--Content: services with uk cards, every card has a title and image-->
+            <div class="services-content container" id="services">
                 <div class="d-flex flex-column flex-md-column flex-lg-row gap-3 m-4 col-lg-12">
                     <div class="design uk-card uk-card-default
-                        uk-card-hover uk-card-body rounded
+                        uk-card-hover uk-card-body rounded-3
                         d-flex flex-column col-lg-6">
                         <h2 class="uk-card-title ">Design</h2>
                         <div class="uk-card-media-bottom w-md-50 align-self-end">
                             <picture>
-                                <source srcset="images/designX2.png" media="(min-width: 992px)"/>
-                                <img class="img-fluid" src="images/design.png" alt="logo" />
+                                <source srcset="images/designX2.png" media="(min-width: 992px)">
+                                <img class="img-fluid" src="images/design.png" alt="logo">
                             </picture>
                         </div>
-                    </div>                
+                    </div>
 
                     <div class="digital-product uk-card uk-card-default 
-                        uk-card-hover uk-card-body rounded d-flex flex-column">
+                        uk-card-hover uk-card-body rounded-3 d-flex flex-column">
                         <h2 class="uk-card-title">Digital Product</h2>
                         <div class="uk-card-media-bottom w-md-50 align-self-end">
                             <picture>
-                                <source srcset="images/digitalproductX2.png" media="(min-width: 992px)"/>
-                                <img class="img-fluid" src="images/digitalproduct.png" alt="digital product service" />
+                                <source srcset="images/digitalproductX2.png" media="(min-width: 992px)">
+                                <img class="img-fluid" src="images/digitalproduct.png" alt="digital product service">
                             </picture>
                         </div>
                     </div>
 
                     <div class="ecommerce uk-card uk-card-default uk-card-hover 
-                        uk-card-body rounded d-flex flex-column">
+                        uk-card-body rounded-3 d-flex flex-column">
                         <h2 class="uk-card-title">E-commerce</h2>
                         <div class="uk-card-media-bottom ratio-1x1 w-md-50 align-self-end">
                             <picture>
-                                <source srcset="images/ecommerceX2.png" media="(min-width: 992px)"/>
-                                <img class="img-fluid" src="images/ecommerce.png" alt="ecommerce service" />
+                                <source srcset="images/ecommerceX2.png" media="(min-width: 992px)">
+                                <img class="img-fluid" src="images/ecommerce.png" alt="ecommerce service">
                             </picture>
                         </div>
                     </div>
                 </div>
+            </div>
         </main>
-        <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+        <iframe src="footer.html"
+            onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit.min.js"></script>
