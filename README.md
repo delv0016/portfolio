@@ -9,8 +9,6 @@ Through active problem-solving, I overcame these hurdles. As a result, I not onl
 Prototype from User Experience: https://xd.adobe.com/view/ad030633-b934-4294-8693-b36c8a99be55-f850/
 
 Assets:
-  Images
 - Design image from freepik. https://www.freepik.com/free-vector/graphic-design-elements-collection-flat-style_2036740.htm
 - Digital product image from freepik. https://www.freepik.com/free-vector/set-modern-website-landing-page-design-templates-mobile-phone-tablet-with-gallery-articles-contact-form-flat-isolated-illustration_15480910.htm#query=wireframe&position=3&from_view=search&track=sph
-  Fonts
 - Lobster Two and Playfair display, both from Google Fonts. https://fonts.google.com/share?selection.family=Lobster%2BTwo:wght@700%7CPlayfair%2BDisplay
