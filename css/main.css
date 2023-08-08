@@ -84,6 +84,10 @@ h1, h2, h3, p, a, .copyright, form{
     height: auto; 
 }
 
+.location-wrapper .container {
+    margin-bottom: -1rem !important;
+}
+
 @media (min-width: 768px) { 
     .uk-card-media-bottom{
         width: 75%;
