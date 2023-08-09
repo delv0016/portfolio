@@ -61,16 +61,6 @@ h2 {
     color: #FFA428 !important;
 }
 
-/* .services-content .uk-card {
-    max-height: 275px;
-}
-
-.services-content .uk-card-media-bottom img{
-    width: 100%;
-    max-width: 275px;
-    height: auto;
-} */
-
 
 /*About page: font and icon colour*/
 
@@ -159,29 +149,3 @@ h2 {
         height: auto;
     }
 }
-
-@font-face {
-    font-family: 'wild_wanderlustpersonal';
-    src: url('/assets/fonts/wildwanderlust-personal-webfont.woff2') format('woff2'),
-         url('/assets/fonts/wildwanderlust-personal-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-} 
-
-/* h1 {
-    font-family: 'wild_wanderlustpersonal';
-    font-weight:normal;
-    font-style:normal;
-    font-size: 7.5rem;
-    line-height: 0.7!important;
-}
-
-.banner-title h2 {
-    font-family: 'wild_wanderlustpersonal';
-    font-weight:normal;
-    font-style:normal;
-    font-size: 8.5rem;
-    line-height: 1!important;
-}
- */
